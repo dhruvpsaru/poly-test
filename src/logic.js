@@ -56,10 +56,10 @@ const findAngleInRadian = (endPoint) => {
 }
 
 const findQuadrant = ([x, y]) => {
-    if (x > 0 && y > 0) return 1
-    if (x < 0 && y > 0) return 2
-    if (x < 0 && y < 0) return 3
-    if (x > 0 && y < 0) return 4
+    if (x >= 0 && y >= 0) return 1
+    if (x <= 0 && y >= 0) return 2
+    if (x <= 0 && y <= 0) return 3
+    if (x >= 0 && y <= 0) return 4
     else throw new Error(`Unknow quadrant `)
 }
 
@@ -106,6 +106,7 @@ export const run = (poly) => {
 // run([[13,1],[15,8],[-17,7],[-2,8],[-17,-4]])
 // run([[15,-2],[16,-13],[2,11],[13,-6],[18,-11]])
 // run ([[-13,-20],[-18,0],[-11,7],[-5,0],[10,-12]])
+// run([[-11, -12], [-5, -12], [-5, -2], [-11, -2]])
 
 
 

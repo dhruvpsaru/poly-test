@@ -79,7 +79,7 @@ export const PolygonRenderer = ({ polygon, title }) => {
 
   const draw = (p5) => {
     p5.background(255);
-    const scale = 10;
+    const scale = 15;
     drawPolygon(p5, polygon, scale);
   };
 
